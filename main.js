@@ -8,7 +8,7 @@ const BrowserWindow = electron.BrowserWindow;
 
 var mainWindow;
 app.on('ready', function() {
-	mainWindow = new BrowserWindow({width: 300, height: 540, backgroundColor: '#2e2c29'});
+	mainWindow = new BrowserWindow({width: 270, height: 540, backgroundColor: '#2e2c29'});
 	mainWindow.loadURL(url.format ({
 		pathname: path.join(__dirname, 'calculator.html'),
 		protocol: 'file',
