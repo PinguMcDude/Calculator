@@ -24,6 +24,13 @@ function reset() {
 	document.getElementById("inputBox").value = "";
 }
 
+function resetAll() {
+	document.getElementById("answerBox").value = "";
+	document.getElementById("inputBox").value = "";
+	var column = document.getElementById("answersSec");
+	column.innerHTML = "";
+}
+
 function delChar() {
 	input = document.getElementById("inputBox").value;
 	output = input.slice(0, -1);
